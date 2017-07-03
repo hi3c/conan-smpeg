@@ -11,7 +11,7 @@ class SmpegConan(ConanFile):
     options = {"shared": [True, False]}
     default_options = "shared=True"
     generators = "cmake"
-    requires = "SDL2/2.0.5@hi3c/experimental"
+    requires = "SDL2/2.0.5_1@hi3c/experimental"
 
     def source(self):
         tools.download("https://www.libsdl.org/projects/smpeg/release/smpeg2-2.0.0.tar.gz", "smpeg.tar.gz")
